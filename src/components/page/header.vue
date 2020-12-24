@@ -1,6 +1,13 @@
 <template>
-  <div class="Header">
-    <h1>{{ msg }}</h1>
+
+    <div class="Headernav">
+    <router-link
+      v-for="item in list"
+      :key="item.to"
+      class="itemNav"
+      :to="item.to">
+       {{ item.title }}
+      </router-link>
   </div>
 </template>
 
@@ -8,9 +15,23 @@
 import { Options, Vue } from 'vue-class-component';
 
 @Options({
+  
   props: {
     msg: String
-  }
+  },
+    data() {
+    return {
+      list: [
+        { title: "Home", to: "/" },
+        { title: "About", to: "/about" },
+        { title: "Services", to: "/services" },
+        { title: "Lighting", to: "/lighting" },
+        { title: "SFX", to: "/sfx" },
+        { title: "Hire", to: "/hire" },
+
+      ],
+    };
+  },
 })
 export default class Header extends Vue {
   msg!: string
