@@ -4,7 +4,7 @@
     <router-link
       v-for="item in list"
       :key="item.to"
-      class="mx-2 hidden md:inline-block"
+      class="itemNav"
       :to="item.to">
        {{ item.title }}
       </router-link>
@@ -42,12 +42,14 @@ export default {
   color: #2c3e50;
 }
 
-#nav {
+.Headernav {
   padding: 30px;
 }
 
-#nav a {
+.itemNav {
+  Padding: 30px;
   font-weight: bold;
+  background-color: #42b983;
   color: #2c3e50;
 }
 
