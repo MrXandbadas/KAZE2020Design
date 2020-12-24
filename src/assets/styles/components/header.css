@@ -1,0 +1,19 @@
+.headerContainer {
+    padding: 30px;
+    background-color: aquamarine;
+  }
+  
+  .itemNav {
+    Padding: 30px;
+    font-weight: bold;
+    color: #4293e4;    
+  }
+  .itemNav.router-link-exact-active {
+    color: #1d1452;
+    background-color: rgb(211, 50, 63);
+  }
+  
+  .itemNav:hover {
+    background-color: rgb(96, 96, 248);
+    color: rgb(241, 241, 241);
+  }

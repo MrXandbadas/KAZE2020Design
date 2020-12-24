@@ -1,14 +1,14 @@
 <template>
 
-    <div class="Headernav">
+    <div class="headerContainer">
     <router-link
       v-for="item in list"
       :key="item.to"
       class="itemNav"
       :to="item.to">
-       {{ item.title }}
+      {{ item.title }}
       </router-link>
-  </div>
+    </div>
 </template>
 
 <script lang="ts">
@@ -34,14 +34,6 @@ import { Options, Vue } from 'vue-class-component';
   },
 })
 export default class Header extends Vue {
-  msg!: string
+  
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-Header {
-  margin: 40px 0 0;
-}
-
-</style>
