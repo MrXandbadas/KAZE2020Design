@@ -7,7 +7,9 @@
       class="itemNav"
       :to="item.to">
       {{ item.title }}
-      </router-link>
+      
+        </router-link>
+      
     </div>
 </template>
 
