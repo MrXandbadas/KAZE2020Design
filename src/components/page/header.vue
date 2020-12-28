@@ -1,4 +1,6 @@
 <template>
+    <img class="logo" src='@/assets/logo.png'>
+    
 
     <div class="headerContainer">
     <router-link
