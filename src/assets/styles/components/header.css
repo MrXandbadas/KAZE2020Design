@@ -9,8 +9,8 @@
     color: #4293e4;    
   }
   .itemNav.router-link-exact-active {
-    color: #1d1452;
-    background-color: rgb(211, 50, 63);
+    color: var(--blue);
+    background-color: var(--red);
   }
   
   .itemNav:hover {
