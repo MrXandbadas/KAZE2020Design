@@ -1,0 +1,14 @@
+.pageTitle{
+
+    padding: 30px;
+    background-color: rgb(218, 218, 218);
+}
+
+#title1{
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: rgb(53, 28, 194);
+    padding: 30px;
+}
