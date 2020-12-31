@@ -2,21 +2,21 @@
   <transition name="fade">
   <div class="home">
  
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Welcome1 Welcome="Welcome to the KAZE Website" />
   </div>
   </transition>
 
 </template>
 
 <script>
-// @ is an alias to /src
 
-import HelloWorld from '@/components/HelloWorld.vue'
+// @ is an alias to /src
+import Welcome1 from '@/components/content/Welcome.vue'
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+    Welcome1
   }
 }
 </script>

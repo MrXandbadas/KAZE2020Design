@@ -1,11 +1,11 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import "./assets/styles/main"
-
-
 import router from './router'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
+const fireBaseConfig
 
-createApp(App)
-.use(router)
-.mount('#app')
+const myApp = createApp(App);
+
+myApp.use(router).mount('#app')
