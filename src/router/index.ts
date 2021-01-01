@@ -34,7 +34,22 @@ const routes: Array<RouteRecordRaw> = [
     path: '/sfx',
     name: 'sfx',
     component: () => import('../pages/content2020/Sfx.vue')
-  }
+  },
+  {
+    path: '/login',
+    name: 'login',
+    component: () => import('@/components/page/Login.vue')
+  },
+  {
+    path: '/forgot-password',
+    name: 'forgot-password',
+    component: () => import('@/components/page/ForgotPassword.vue')
+  },
+  {
+    path: '/signup',
+    name: 'signup',
+    component: () => import('@/components/page/Signup.vue')
+  },
 ]
 
 const router = createRouter({

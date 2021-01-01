@@ -1,5 +1,5 @@
 <template>
-    <img class="logo" src='@/assets/logo.png'>
+    <img class="logo" src='@/assets/img/logo.jpg'>
     
 
     <div class="headerContainer">
@@ -19,10 +19,6 @@
 import { Options, Vue } from 'vue-class-component';
 
 @Options({
-  
-  props: {
-    msg: String
-  },
     data() {
     return {
       list: [
@@ -32,11 +28,13 @@ import { Options, Vue } from 'vue-class-component';
         { title: "Lighting", to: "/lighting" },
         { title: "SFX", to: "/sfx" },
         { title: "Hire", to: "/hire" },
+        { title: "Login", to: "/login" }
 
       ],
     };
   },
 })
+
 export default class Header extends Vue {
   
 }

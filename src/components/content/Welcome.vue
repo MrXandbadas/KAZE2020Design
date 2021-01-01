@@ -1,10 +1,12 @@
 <template>
-<div class="welcome" id="title">{{Welcome}}</div>
-
-<div> {{msg}} </div>
+    <div class="welcome" id="title">{{Welcome}}</div>
+    
+    <div> {{msg}} </div>
+        
 </template>
 
 <script lang="ts">
+
 import { Options, Vue } from 'vue-class-component';
 
 @Options({
@@ -16,5 +18,6 @@ import { Options, Vue } from 'vue-class-component';
 export default class Welcome extends Vue {
     Welcome!: string
     msg!: string
-}
+    }
+
 </script>
